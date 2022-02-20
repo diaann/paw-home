@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {   
+    float: right;
+}
+
+.logo h2 a {
+    float: left;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    height: 14px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+article {
+    margin: auto;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-dashboard {
+    width: 50%;
+}
+
+.column {
+    margin-left: 70px;
+}
+
+.column h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.button {
+    background: #6096BA;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.desc {
+    margin-bottom: 25px;
+}
+
+.button:hover {
+    font-weight: bold;
+    background-color: #274C77;
+}
+
+.img-adopsi {
+    width: 60%;
+}
+
+.img-missing {
+    width: 50%;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-profile {
+    width: 20%;
+    border-radius: 50%;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.biodata {
+    padding-top: 10px;
+}
+
+.foto {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.negara {
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact {
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #6096BA;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact:hover {
+    font-weight: bold;
+    background-color: #274C77;
+}
+
+aside article {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 0px;
+    color: white;
+    background-color: #6096BA;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo-bottom {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .column {
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .column h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    article {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .column {
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .column h2 {
+        font-size: 20px;
+    }
+
+    .img-adopsi {
+        margin-top: 30px;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        display: flex;
+        background-color: #FFFFFF;
+        height: 100vh;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 0.8s;
+        
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    .foto {
+        width: 35%;
+    }
+}
